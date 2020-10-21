@@ -8,9 +8,9 @@ export const educationList = async () => {
     data.forEach(element => {
         $("#myeducation").append(
             `<div> 
-          <div>${element.year}</div>  
-          <div>
-            <span>${element.title} </span> 
+          <div class="year">${element.year}</div>  
+          <div class="educationdescription">
+            <span class="title">${element.title} </span> <br>
             <span>${element.description} </span>
           </div>
          </div>`)
