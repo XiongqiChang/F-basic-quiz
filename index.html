@@ -1,38 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Resume</title>
-</head>
-<body>
-  <script src="src/app.js"></script>
-  <main class="main">
-
-    <section>
-        <img id="useravatar" src="./mockups/avatar.jpg" class="img" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <!-- TODO GTB-1: * 页面有基本样式，但education那一块有较大的样式问题，且可以优化的点还很多 -->
+    <!-- TODO GTB-1: * user和education都从后端获取数据且展示在了前端 -->
+    <!-- TODO GTB-2: * 有写测试，但是整体是错误的，对测什么，怎么测的理解还不到位 -->
+    <!-- TODO GTB-3: * 使用了scss和js中import scss文件，但没有使用scss任何特性 -->
+    <!-- TODO GTB-3: * 页面结构划分大致合理 -->
+    <!-- TODO GTB-3: * JS 有按照user和eduction做划分，可以更进一步抽出划分 api层，DOM操作层等内容 -->
+    <!-- TODO GTB-3: * 通过npm方式引入了axios和jquery -->
+    <!-- TODO GTB-4: * 测试是挂掉的 -->
+    <!-- TODO GTB-4: * 有小步提交，但还可以拆分更细，如按照页面模块拆分 -->
+    <script src="src/app.js"></script>
+    <main class="main">
+      <!-- TODO GTB-3: - 有使用到section，但对其他语义化标签对理解和使用还可以加强 -->
+      <section>
+        <!-- TODO GTB-4: - class命名需要为 a-b-c 形式（user-avatar等） -->
+        <img id="useravatar" src="./mockups/avatar.jpg" class="img" />
         <div>
           <h1 class="header">Hello,</h1>
-          <span class="description">My Name IS <span id="username"></span>  <span id="userage"></span> OLD AND THIS IS MY
-          RESUME/CV</div>
-        </span>
+          <!-- TODO GTB-4: - 下面多了个</div>和</span>，我给你删了，否则无法提交，注意html正确嵌套 -->
+          <span class="description"
+            >My Name IS <span id="username"></span>
+            <span id="userage"></span> OLD AND THIS IS MY RESUME/CV
+          </span>
         </div>
-      </span> 
-    </section>
-    <hr class="line"></hr>
+      </section>
+      <!-- TODO GTB-3: - hr为自闭合标签，修改如下 -->
+      <hr class="line" />
 
-    <section>
-      <h3 class="h3"> ABOUT ME </h3>
-      <span id="description"  class="mydescription">this is my test</span>
-    </section>
+      <section>
+        <!-- TODO GTB-4: - class命名需要更具语义性，不要使用标签名作为class名 -->
+        <h3 class="h3">ABOUT ME</h3>
+        <span id="description" class="mydescription">this is my test</span>
+      </section>
 
-
-    <section id="myeducation">
-      <h3 class="h3">EDUCATION</h3> 
-    </section>
-
-  </main>
-</body>
+      <section id="myeducation">
+        <h3 class="h3">EDUCATION</h3>
+      </section>
+    </main>
+  </body>
 </html>

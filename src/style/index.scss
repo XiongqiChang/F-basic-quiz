@@ -2,63 +2,62 @@
 @import "mixins";
 @import "reboot";
 
-.main{
-   
-    padding: 20px;
-    margin: 60px 60px;
-    background-color: white;
-    align-items: center;
-    text-align: center;
+// TODO GTB-4: - 注意代码格式（缩进等）
+// TODO GTB-3: - 没有使用flex，且没有使用到除文档流之外的任意布局
+.main {
+  padding: 20px;
+  margin: 60px 60px;
+  background-color: white;
+  align-items: center;
+  text-align: center;
 }
 
 .img {
-    border-radius: 50px;
-    width: 110px;
-    height: 110px;
-    margin-top: -70px;
-    margin-bottom: 20px;;
-   
-  }
+  border-radius: 50px;
+  width: 110px;
+  height: 110px;
+  margin-top: -70px;
+  margin-bottom: 20px;
+}
 
-  .header{
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-  }
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
 
-  .description{
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 20px;
-  }
+.description {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
 
-  .h3{
-      color: red;
-      margin-left: -800px;
-      
-  }
-  .mydescription{
-    
-    font-size: 16px;
-    padding: 0px 20px;
-  }
+.h3 {
+  color: red;
+  margin-left: -800px;
+}
+.mydescription {
+  font-size: 16px;
+  padding: 0px 20px;
+}
 
-  .year{
-      font-size: 15px;
-      font-weight: bold;
-      margin-left: -850px;
-  }
+// TODO GTB-3: - 不要使用 -850px 这种与文档流对抗的布局形式，思考使用flex等布局进行改造
+.year {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -850px;
+}
 
-  .title{
-      margin-left: -950px;
-      text-align: none;
-      font-weight: bolder;
-  }
+.title {
+  margin-left: -950px;
+  text-align: none;
+  font-weight: bolder;
+}
 
-  .educationdescription{
-    margin-left: -950px;
-    font-size: 16px;
-    padding: 0px 20px;
-    margin-left: 350px;
-    background-color: #F8F9FA;
-  }
+.educationdescription {
+  margin-left: -950px;
+  font-size: 16px;
+  padding: 0px 20px;
+  margin-left: 350px;
+  background-color: #f8f9fa;
+}
